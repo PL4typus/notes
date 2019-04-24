@@ -1,9 +1,9 @@
 # GIT MAGIC
 
 ***by Pierre-Louis Palant***
-
-*Collected from various sources*
 ---
+*Collected from various sources*
+
 
 ## Untrack newly .gitignore'd files
  - Commit everything, especially new .gitignore
