@@ -1,6 +1,6 @@
 # GIT MAGIC
-*** by Pierre-Louis Palant ***
-* Collected from various sources *
+***by Pierre-Louis Palant***
+*Collected from various sources*
 ---
 
 ## Untrack newly .gitignore'd files
