@@ -1,10 +1,11 @@
 ### Problem Description
 
-The CI with hardware is complicated, limits where the runners can be located (CAC export control, hardware requirement), which limits when it can be ran. This proposal is about implementing OpenSC CI operating on virtual smart card with libcacard.
+The CI with hardware is complicated, limits where the runners can be located (CAC export control, hardware requirement), which limits when it can be run. It is also less easy to reproduce hardware tests for contributors with limited ressources.
 
 ### Proposed Resolution
 
-This proposition is divided in three related sub-projects:
+This proposal is about implementing OpenSC CI operating on virtual smart card. This was done using Libcacard and emulating CAC, but could be done with any kind of virtual smart card (see the [vsmartcard project](https://github.com/frankmorgner/vsmartcard/)).
+It is divided in three related sub-projects:
 
  - First of all, there is [virt_cacard](https://github.com/PL4typus/virt_cacard), a program using [libcacard](https://gitlab.freedesktop.org/spice/libcacard/), [virtualsmartcard's vpcd](https://github.com/frankmorgner/vsmartcard/tree/master/virtualsmartcard) and [sofhsm2](https://github.com/opendnssec/SoftHSMv2) to present a virtual CAC to the user through the PC/SC interface. 
  - Then, I wrote GitLab-CI jobs to run OpenSC's p11tests on the virtual card. At the moment, my virtual card has only been [successfully tested on Fedora 29 and 30](https://gitlab.com/PL4typus/OpenSC/pipelines/71421677), and I'm in the process of debugging it on Ubuntu and Debian Testing. [(my fork of OpenSC)](https://gitlab.com/PL4typus/OpenSC/tree/virt_cacard)
