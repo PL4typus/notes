@@ -1,7 +1,7 @@
 ### Problem Description
 
  - The CI with hardware is complicated, limits where the runners can be located (CAC export control, hardware requirement), which limits when it can be run. It is also less easy to reproduce hardware tests for contributors with limited ressources.
- - Travis CI doens't offer a varied choice of up to date images to run tests. 
+ - Travis CI doesn't offer a varied choice of up to date images to run tests. 
  
 ### Proposed Resolution
 
