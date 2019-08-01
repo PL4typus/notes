@@ -9,6 +9,11 @@ This proposal is about implementing OpenSC CI operating on virtual smart cards a
 It is divided in three related sub-projects:
 
  - First of all, there is [virt_cacard](https://github.com/PL4typus/virt_cacard), a program using [libcacard](https://gitlab.freedesktop.org/spice/libcacard/), [virtualsmartcard's vpcd](https://github.com/frankmorgner/vsmartcard/tree/master/virtualsmartcard) and [softhsm2](https://github.com/opendnssec/SoftHSMv2) to present a virtual CAC to the user through the PC/SC interface. 
+ 
+ <p align="center">
+  <img src="https://github.com/PL4typus/notes/blob/master/virt_cacard.jpg" />
+</p>
+ 
  - Then, I integrated [virt_cacard as a submodule for OpenSC.](https://github.com/PL4typus/OpenSC/tree/virt_cacard) I made a mirror of this repository on GitLab and [wrote CI jobs that run the p11tests on the virtual CAC](https://gitlab.com/PL4typus/OpenSC/pipelines/73781384). 
  Mirroring pulls the changes from the GitHub repo automatically and runs the CI tests as set up. For instance, this could be done with pull requests.
  - Finally, those jobs are run by GitLab shared runners using container images built using GitLab-CI [in this project](https://gitlab.com/PL4typus/opensc-images) and stored in GitLab's container registry. This is done in a similar fashion to [GnuTLS](https://gitlab.com/gnutls/gnutls)'s CI and [build-images repository](https://gitlab.com/gnutls/build-images/). 
