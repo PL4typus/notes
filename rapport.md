@@ -55,4 +55,6 @@ Durant mon stage
  - [Travis documentation](https://docs.travis-ci.com/)
  - [SoftHSM website](https://www.opendnssec.org/softhsm/)
  - [SoftHSM sources](https://github.com/opendnssec/SoftHSMv2)
+ - [Common Access Card](https://www.cac.mil/common-access-card/)
  - [CAC developer resources](https://www.cac.mil/common-access-card/developer-resources/)
+ - [CAC specifications](https://www.cac.mil/Portals/53/Documents/Technical-Bulletin_CAC-Data-Model-Change_CAC-2-6-2b-Applet-Structure_June2009UPDATED.pdf)
